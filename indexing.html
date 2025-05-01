@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai Mohan Yalla</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d1b2a;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .buttons a {
+      background: white;
+      color: #0077b6;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease-in-out;
+    }
+
+    .buttons a:hover {
+      background: #00b4d8;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .download-btn {
+      background: #00b4d8;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s ease-in-out;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .download-btn:hover {
+      background: #0077b6;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 80px 10%;
+      background-color: #1b263b;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    section h2 i {
+      margin-right: 10px;
+      color: #00b4d8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #0d1b2a;
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 180, 216, 0.6);
+      background-color: #1e2a3f;
+    }
+
+    footer {
+      background: #0077b6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: #00b4d8;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: white;
+    }
+
+    .contact-details {
+      background-color: #2c3e50;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-details p {
+      margin: 10px 0;
+    }
+
+    .contact-details a {
+      color: #00a3d4;
+      text-decoration: none;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      section {
+        padding: 50px 10%;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .download-btn {
+        width: 100%;
+        padding: 12px 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="hero" data-aos="fade-up">
+    <h1>Sai Mohan Yalla</h1>
+    <p>Data Engineer | Cloud | Big Data</p>
+    <div class="buttons">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#Languages">Languages</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <section id="about" data-aos="fade-up">
+    <h2><i class="fas fa-user"></i> About</h2>
+    <div class="grid">
+      <div class="card">
+        <p>I'm a Data Engineer passionate about building scalable data solutions, real-time pipelines, and cloud-native architectures. Skilled in Python, SQL, Spark, and orchestration tools, I thrive on turning raw data into valuable business insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" data-aos="fade-up">
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Data Engineer - DataBeat</h3>
+        <p>Developed ETL pipelines in Azure Data Factory, Synapse & Databricks. Optimized workflows to reduce runtime by 30% and deployed data solutions for enterprise analytics.</p>
+      </div>
+      <div class="card">
+        <h3>Analyst Intern - Verzo</h3>
+        <p>Automated reporting pipelines using Power BI & SQL Server, reducing manual effort by 50%. Supported data validation and KPI tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="grid">
+      <div class="card">
+        <p>Bachelor of Technology (B.Tech) in Mechanical Engineering</p>
+        <p>RGUKT IIIT Ongole (2018 - 2022)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" data-aos="fade-up">
+    <h2><i class="fas fa-certificate"></i> Certifications</h2>
+    <div class="grid">
+      <div class="card">Azure Data Engineer Associate - Microsoft</div>
+      <div class="card">Google Cloud Data Engineering - Coursera</div>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <div class="grid">
+      <div class="card"><strong>Programming</strong><br>Python, SQL, PySpark</div>
+      <div class="card"><strong>Cloud & Big Data</strong><br>Azure, GCP Basics, AWS , Databricks, Snowflake</div>
+      <div class="card"><strong>ETL & Orchestration</strong><br>Azure Data Factory, SSIS, Apache Airflow</div>
+      <div class="card"><strong>Reports & modeling</strong><br>Power BI, SSAS</div>
+      <div class="card"><strong>Tools & Platforms</strong><br>Jira, Git, Postgresql, Excel</div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2><i class="fas fa-code"></i> Projects</h2>
+    <div class="grid">
+      <div class="card">Real-Time Data Pipeline - Azure integret runtime → Shecudling or Streaming </div>
+      <div class="card">Retail Sales Dashboard - Data ingestion, warehouse modeling, SSAS, Power BI visualization</div>
+      <div class="card">Server Log Analysis - Automated log processing pipeline using PySpark</div>
+    </div>
+  </section>
+
+
+  <section id="languages" data-aos="fade-up">
+    <h2><i class="fas fa-language"></i> Languages</h2>
+    <div class="grid">
+      <div class="card"><strong>English</strong><br>(Proficient)</div>
+      <div class="card"><strong>Telugu</strong><br>(Native)</div>
+    </div>
+  </section>
+  
+  <section id="contact" data-aos="fade-up">
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <div class="contact-details">
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:saimohan.yalla@gmail.com">saimohan.yalla@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/sai-mohan-yalla-108224237">LinkedIn profile</a></p>
+      <P><i class="fab fa-github"></i> GitHub: <a href="https://github.com/SaiMohanYalla">github.com/SaiMohanYalla</a></P>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sai Mohan Yalla. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: false });
+  </script>
+</body>
+</html>
